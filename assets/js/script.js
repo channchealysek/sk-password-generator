@@ -21,8 +21,8 @@ function generatePassword() {
   usr_selected_symbol = "no";
   password = "";
 
-  digit= prompt("Choose a length of at least 8 characters and no more than 128 characters for your password.\nif you don't choose any lengths for password.\nSystem will set default lenghts to 12 characters.");
-  if(digit==="") digit = 12;
+  digit= prompt("Choose a length of at least 8 characters and no more than 128 characters for your password.\nif you don't choose any lengths for password.\nSystem will set default lenghts to 8 characters.");
+  if(digit==="") digit = 8;
   
   //ask user to set character lenght for thier password
   //ask user to input any character that they want to include with the password.
