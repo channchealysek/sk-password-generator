@@ -11,9 +11,8 @@ function generatePassword() {
 
   var digit= prompt("Choose a length of at least 8 characters and no more than 128 characters for your password.\nif you don't choose any lengths for password.\nSystem will set default lenghts to 12 characters.");
   if(digit==="") digit = 12;
-  console.log(digit);
+
   var user_char = prompt("Enter character that you want to include in the password.\adon't enter any characters.\nSystem will generate by DEFAULT.");
-  console.log(user_char);
 
   let password = "";
 
@@ -53,12 +52,6 @@ function generatePassword() {
   }
   return password;
 }
-
-// set min and max password lenght
-function passwordLenght(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
