@@ -9,9 +9,11 @@ var rand;
 //function password Generator
 function generatePassword() {
 
+  //ask user to set character lenght for thier password
   var digit= prompt("Choose a length of at least 8 characters and no more than 128 characters for your password.\nif you don't choose any lengths for password.\nSystem will set default lenghts to 12 characters.");
   if(digit==="") digit = 12;
 
+  //ask user to input any character that they want to include with the password.
   var user_char = prompt("Enter character that you want to include in the password.\adon't enter any characters.\nSystem will generate by DEFAULT.");
 
   let password = "";
